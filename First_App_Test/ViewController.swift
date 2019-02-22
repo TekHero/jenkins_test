@@ -17,6 +17,7 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         myLabel.text = "Hello World!"
         myLabel.textColor = UIColor.cyan
+        myLabel.font = UIFont(name: "Avenir-Medium", size: 18.0)
     }
 
 }
