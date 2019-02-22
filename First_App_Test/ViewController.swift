@@ -15,7 +15,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        myLabel.text = "Fastlane has been installed, now performing tests again!!!"
+        myLabel.text = "Created a develop branch"
         myLabel.textColor = UIColor.white
         myLabel.font = UIFont(name: "Avenir-Medium", size: 18.0)
         myLabel.numberOfLines = 0
