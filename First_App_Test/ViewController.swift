@@ -18,6 +18,7 @@ class ViewController: UIViewController {
         myLabel.text = "Hello World!"
         myLabel.textColor = UIColor.cyan
         myLabel.font = UIFont(name: "Avenir-Medium", size: 18.0)
+        myLabel.numberOfLines = 0
     }
 
 }
