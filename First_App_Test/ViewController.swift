@@ -15,7 +15,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        myLabel.text = "Hooooraayy!!!"
+        myLabel.text = "Hooooraayy!!!!!!"
         myLabel.textColor = UIColor.cyan
         myLabel.font = UIFont(name: "Avenir-Medium", size: 18.0)
         myLabel.numberOfLines = 0
