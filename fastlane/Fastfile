@@ -24,7 +24,6 @@ platform :ios do
   end
 
   lane :CD do 
-      increment_build_number
       gym
       testflight
   end

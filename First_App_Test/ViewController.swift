@@ -11,15 +11,26 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var myLabel: UILabel!
+    @IBOutlet weak var usernameTextField: UITextField!
+    @IBOutlet weak var passwordTextField: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        myLabel.text = "Created a develop branch, testing it today - monday"
+        myLabel.text = ""
         myLabel.textColor = UIColor.white
         myLabel.font = UIFont(name: "Avenir-Medium", size: 18.0)
         myLabel.numberOfLines = 0
     }
-
+    
+    @IBAction func loginBtnPressed(_ sender: Any) {
+        if let username = usernameTextField.text {
+            myLabel.text = "Welcome, \(username)"
+        }
+        
+        usernameTextField.text = nil
+        passwordTextField.text = nil
+    }
+    
 }
 

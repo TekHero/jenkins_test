@@ -27,22 +27,63 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="byQ-eo-aQJ">
+                                <rect key="frame" x="80" y="164" width="215" height="75"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YW6-uk-gM3">
+                                        <rect key="frame" x="0.0" y="0.0" width="215" height="30"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="Username"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="elx-rP-09I">
+                                        <rect key="frame" x="0.0" y="45" width="215" height="30"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="Password"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nms-MK-5PS">
+                                <rect key="frame" x="96.5" y="311.5" width="182" height="44"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="WZ4-pK-xs0"/>
+                                    <constraint firstAttribute="width" constant="182" id="pSu-Mv-Akz"/>
+                                </constraints>
+                                <state key="normal" title="Login">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="loginBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ps6-A5-8QE"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.098039215686274508" green="0.098039215686274508" blue="0.098039215686274508" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="nms-MK-5PS" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="52h-vi-kF2"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Bw3-f8-Mdq" secondAttribute="trailing" constant="20" id="Qhk-hZ-njl"/>
                             <constraint firstItem="Bw3-f8-Mdq" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="Uyc-Vf-Iy1"/>
+                            <constraint firstItem="byQ-eo-aQJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VYI-sh-gNR"/>
                             <constraint firstItem="Bw3-f8-Mdq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="aoe-iH-zSh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="byQ-eo-aQJ" secondAttribute="trailing" constant="80" id="d4Y-nZ-NfW"/>
+                            <constraint firstItem="byQ-eo-aQJ" firstAttribute="top" secondItem="Bw3-f8-Mdq" secondAttribute="bottom" constant="54" id="nTf-wh-itd"/>
+                            <constraint firstItem="nms-MK-5PS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ptl-cO-2Ys"/>
+                            <constraint firstItem="byQ-eo-aQJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="80" id="rJo-6q-uY3"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="myLabel" destination="Bw3-f8-Mdq" id="WvO-Go-bHE"/>
+                        <outlet property="passwordTextField" destination="elx-rP-09I" id="VUJ-Gt-3hP"/>
+                        <outlet property="usernameTextField" destination="YW6-uk-gM3" id="76f-7i-ZqQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="132" y="121"/>
+            <point key="canvasLocation" x="63" y="90"/>
         </scene>
     </scenes>
 </document>
