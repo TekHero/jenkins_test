@@ -19,7 +19,7 @@ class First_App_TestUITests: XCTestCase {
         users["warren"] = "gotenna"
         users["ivan"] = "gotenna"
         users["tanmay"] = "gotenna"
-        users["brian"] = "gotenna"
+        users["brian"] = "gotennacompany"
 
         // In UI tests it is usually best to stop immediately when a failure occurs.
         continueAfterFailure = false
@@ -40,7 +40,7 @@ class First_App_TestUITests: XCTestCase {
         for (key, value) in users {
             changeTextFieldText(usernameTxt: key, passwordTxt: value)
         }
-                        
+        
     }
     
     func changeTextFieldText(usernameTxt: String, passwordTxt: String) {
