@@ -18,8 +18,8 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         myLabel.text = ""
-        myLabel.textColor = UIColor.white
-        myLabel.font = UIFont(name: "Avenir-Medium", size: 18.0)
+        myLabel.textColor = UIColor.cyan
+        myLabel.font = UIFont(name: "Avenir-Light", size: 16.0)
         myLabel.numberOfLines = 0
         // This comment has been added via GitHub directory to test if Jenkins will pull to local project
     }
