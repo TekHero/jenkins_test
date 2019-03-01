@@ -20,8 +20,6 @@ class First_App_TestUITests: XCTestCase {
         users["ivan"] = "qaengineer"
         users["tanmay"] = "qaengineer"
         users["brian"] = "internpass"
-        users["gotennapro"] = "randompassword"
-        users["raf"] = "thisisapassword"
 
         // In UI tests it is usually best to stop immediately when a failure occurs.
         continueAfterFailure = false
@@ -59,7 +57,7 @@ class First_App_TestUITests: XCTestCase {
                 app.keys["\(char)"].tap()
             }
             sleep(1)
-            XCTAssert(app.buttons["Login"].exists)
+            XCTAssert(app.buttons["Login"].exists) // Checks to make sure that a button with the title "Login" exists, if not, the test case will fail
             app.buttons["Login"].tap()
             sleep(2)
         }
