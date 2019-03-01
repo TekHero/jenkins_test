@@ -28,11 +28,12 @@ class ViewController: UIViewController {
         myLabel.text = nil
         if let username = usernameTextField.text {
             myLabel.text = "Welcome \(username)! - Nice to meet you"
-            myLabel.textColor = UIColor.cyan
+            myLabel.textColor = UIColor.purple
         }
         
         usernameTextField.text = nil
         passwordTextField.text = nil
+        // This comment is new and has been added from GitHub directly
     }
     
 }
