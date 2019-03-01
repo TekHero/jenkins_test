@@ -16,11 +16,12 @@ class First_App_TestUITests: XCTestCase {
 
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
-        users["warren"] = "gotenna"
-        users["ivan"] = "gotenna"
-        users["tanmay"] = "gotenna"
-        users["brian"] = "gotennacompany"
-        users["gotennapro"] = "gotenna"
+        users["warren"] = "qadirector"
+        users["ivan"] = "qaengineer"
+        users["tanmay"] = "qaengineer"
+        users["brian"] = "internpass"
+        users["gotennapro"] = "randompassword"
+        users["raf"] = "thisisapassword"
 
         // In UI tests it is usually best to stop immediately when a failure occurs.
         continueAfterFailure = false
@@ -59,7 +60,7 @@ class First_App_TestUITests: XCTestCase {
             }
             sleep(1)
             app.buttons["Login"].tap()
-            sleep(3)
+            sleep(2)
         }
     }
     
