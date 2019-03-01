@@ -21,6 +21,7 @@ class ViewController: UIViewController {
         myLabel.textColor = UIColor.white
         myLabel.font = UIFont(name: "Avenir-Medium", size: 18.0)
         myLabel.numberOfLines = 0
+        // This comment has been added via GitHub directory to test if Jenkins will pull to local project
     }
     
     @IBAction func loginBtnPressed(_ sender: Any) {
