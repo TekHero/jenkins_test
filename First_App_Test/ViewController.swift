@@ -26,7 +26,7 @@ class ViewController: UIViewController {
     
     @IBAction func loginBtnPressed(_ sender: Any) {
         if let username = usernameTextField.text {
-            myLabel.text = "Welcome to goTenna!, \(username)"
+            myLabel.text = "Welcome \(username)! - Nice to meet you"
         }
         
         usernameTextField.text = nil
