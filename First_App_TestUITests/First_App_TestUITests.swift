@@ -59,7 +59,7 @@ class First_App_TestUITests: XCTestCase {
                 app.keys["\(char)"].tap()
             }
             sleep(1)
-            XCTAssert(app.buttons["Login"].exists)
+            XCTAssert(app.buttons["Logout"].exists)
             app.buttons["Login"].tap()
             sleep(2)
         }
