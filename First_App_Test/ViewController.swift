@@ -25,12 +25,12 @@ class ViewController: UIViewController {
     }
     
     @IBAction func loginBtnPressed(_ sender: Any) {
+        myLabel.text = nil
         if let username = usernameTextField.text {
             myLabel.text = "Welcome \(username)! - Nice to meet you"
             myLabel.textColor = UIColor.cyan
         }
         
-        myLabel.text = nil
         usernameTextField.text = nil
         passwordTextField.text = nil
     }
