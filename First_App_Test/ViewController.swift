@@ -28,7 +28,7 @@ class ViewController: UIViewController {
         myLabel.text = nil
         if let username = usernameTextField.text {
             myLabel.text = "Welcome \(username)! - Nice to meet you"
-            myLabel.textColor = UIColor.yellow
+            myLabel.textColor = UIColor.white
         }
         
         usernameTextField.text = nil
