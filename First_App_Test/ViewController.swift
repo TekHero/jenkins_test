@@ -19,7 +19,7 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         myLabel.text = "Please sign in"
         myLabel.textColor = UIColor.cyan
-        myLabel.font = UIFont(name: "Avenir-Light", size: 16.0)
+        myLabel.font = UIFont(name: "Avenir-Medium", size: 16.0)
         myLabel.numberOfLines = 0
         // This comment has been added via GitHub directory to test if Jenkins will pull to local project
     }
