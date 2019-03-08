@@ -18,7 +18,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         myLabel.text = "Please sign in"
-        myLabel.textColor = UIColor.cyan
+        myLabel.textColor = UIColor.red
         myLabel.font = UIFont(name: "Avenir-Light", size: 16.0)
         myLabel.numberOfLines = 0
         // This comment has been added via GitHub directory to test if Jenkins will pull to local project
@@ -28,7 +28,7 @@ class ViewController: UIViewController {
         myLabel.text = nil
         if let username = usernameTextField.text {
             myLabel.text = "Welcome \(username)!"
-            myLabel.textColor = UIColor.white
+            myLabel.textColor = UIColor.cyan
         }
         
         usernameTextField.text = nil
