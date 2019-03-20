@@ -11,11 +11,15 @@ target 'First_App_Test' do
   target 'First_App_TestTests' do
     inherit! :search_paths
     # Pods for testing
+    use_frameworks!
+    pod 'ActiveLabel'
   end
 
   target 'First_App_TestUITests' do
     inherit! :search_paths
     # Pods for testing
+    use_frameworks!
+    pod 'ActiveLabel'
   end
 
 end

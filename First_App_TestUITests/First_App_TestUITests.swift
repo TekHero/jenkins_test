@@ -20,7 +20,6 @@ class First_App_TestUITests: XCTestCase {
         users["ivan"] = "qaengineer"
         users["tanmay"] = "qaengineer"
         users["brian"] = "internpass"
-        users["raf"] = "example"
 
         // In UI tests it is usually best to stop immediately when a failure occurs.
         continueAfterFailure = false
