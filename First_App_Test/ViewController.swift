@@ -7,10 +7,11 @@
 //
 
 import UIKit
+import ActiveLabel
 
 class ViewController: UIViewController {
 
-    @IBOutlet weak var myLabel: UILabel!
+    @IBOutlet weak var myLabel: ActiveLabel!
     @IBOutlet weak var usernameTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     
@@ -21,13 +22,17 @@ class ViewController: UIViewController {
         myLabel.textColor = UIColor.blue
         myLabel.font = UIFont(name: "Avenir-Heavy", size: 16.0)
         myLabel.numberOfLines = 0
+        myLabel.enabledTypes = [.mention, .hashtag]
+        myLabel.handleMentionTap { (str) in
+            print("Mention tapped: \(str)")
+        }
         // This comment has been added via GitHub directory to test if Jenkins will pull to local project
     }
     
     @IBAction func loginBtnPressed(_ sender: Any) {
         myLabel.text = nil
         if let username = usernameTextField.text {
-            myLabel.text = "Welcome \(username)!"
+            myLabel.text = "Welcome @\(username)! #awesome!"
             myLabel.textColor = UIColor.green
         }
         
